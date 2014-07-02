@@ -1,0 +1,665 @@
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35747bdd[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.1] org.scala-lang#scala-library;2.11.1[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5550cfef[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e24af2d[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f15a056[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.scalatags#scalatags_sjs0.5_2.11;0.3.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3151ee66[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.scalatags#scalatags_sjs0.5_2.11;0.3.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.scalatags#scalatags_sjs0.5_2.11;0.3.0[0m
+[0m[[0mdebug[0m] [0m	found com.scalatags#scalatags_sjs0.5_2.11;0.3.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.11;7.0.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2388de9f[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.11;7.0.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalaz#scalaz-core_2.11;7.0.6[0m
+[0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.11;7.0.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40c1ed25[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41672f15[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.scalarx#scalarx_sjs0.5_2.11;0.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b02c32a[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.scalarx#scalarx_sjs0.5_2.11;0.2.5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.scalarx#scalarx_sjs0.5_2.11;0.2.5[0m
+[0m[[0mdebug[0m] [0m	found com.scalarx#scalarx_sjs0.5_2.11;0.2.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@eb2575b[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e135081[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.webjars#jasmine;1.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3fb6de9f[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#jasmine;1.3.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.webjars#jasmine;1.3.1[0m
+[0m[[0mdebug[0m] [0m	found org.webjars#jasmine;1.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalatags#scalatags_sjs0.5_2.11;0.3.0 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scalaz#scalaz-core_2.11;7.0.6 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->com.scalarx#scalarx_sjs0.5_2.11;0.2.5 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.webjars#jasmine;1.3.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [plugin->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [plugin->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [plugin->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [plugin->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [plugin->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [plugin->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [plugin->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [plugin->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0 [plugin->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0 {plugin=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [plugin->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.11.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45f0f581[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.11.1[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [plugin->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [plugin->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [plugin->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [plugin->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a18b5fb[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.11.1[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.1] org.scala-lang#scala-reflect;2.11.1[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [plugin->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [plugin->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [plugin->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [plugin->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7edbe481[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [plugin->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [plugin->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [plugin->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [scala-tool->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-library;2.11.1 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [scala-tool->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [scala-tool->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-compiler;2.11.1 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [scala-tool->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang#scala-reflect;2.11.1 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->jline#jline;2.11 [scala-tool->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving jline#jline;2.11 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.11 {scala-tool=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.11[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: jline#jline;2.11[0m
+[0m[[0mdebug[0m] [0m	found jline#jline;2.11 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->jline#jline;2.11 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->jline#jline;2.11 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1->jline#jline;2.11 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0mcircular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.modules#scala-xml_2.11;1.0.2->...[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.1!scala-library.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.1!scala-library.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.1!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0!scalajs-library_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0!scalajs-library_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-library_2.11;0.5.0!scalajs-library_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6!scalajs-dom_sjs0.5_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6!scalajs-dom_sjs0.5_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-dom_sjs0.5_2.11;0.6!scalajs-dom_sjs0.5_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6!scalajs-jquery_sjs0.5_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6!scalajs-jquery_sjs0.5_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-jquery_sjs0.5_2.11;0.6!scalajs-jquery_sjs0.5_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.scalatags#scalatags_sjs0.5_2.11;0.3.0!scalatags_sjs0.5_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.scalatags#scalatags_sjs0.5_2.11;0.3.0!scalatags_sjs0.5_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.scalatags#scalatags_sjs0.5_2.11;0.3.0!scalatags_sjs0.5_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalaz#scalaz-core_2.11;7.0.6!scalaz-core_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalaz#scalaz-core_2.11;7.0.6!scalaz-core_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalaz#scalaz-core_2.11;7.0.6!scalaz-core_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.scalarx#scalarx_sjs0.5_2.11;0.2.5!scalarx_sjs0.5_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.scalarx#scalarx_sjs0.5_2.11;0.2.5!scalarx_sjs0.5_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.scalarx#scalarx_sjs0.5_2.11;0.2.5!scalarx_sjs0.5_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0!scalajs-jasmine-test-framework_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0!scalajs-jasmine-test-framework_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-jasmine-test-framework_2.11;0.5.0!scalajs-jasmine-test-framework_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0!scalajs-test-bridge_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0!scalajs-test-bridge_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-test-bridge_2.11;0.5.0!scalajs-test-bridge_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#jasmine;1.3.1!jasmine.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#jasmine;1.3.1!jasmine.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0!scalajs-compiler_2.11.1.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules.scalajs#scalajs-compiler_2.11.1;0.5.0!scalajs-compiler_2.11.1.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.1!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.1!scala-reflect.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.1!scala-reflect.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(doc)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar(doc)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 94ms :: artifacts dl 12ms[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 compile produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 runtime produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 test produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 provided produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 optional produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 compile-internal produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 runtime-internal produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 test-internal produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 plugin produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 sources produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 docs produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 pom produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for browserapp#browserapp$sources_javadoc_sjs0.5_2.11;0.1 scala-tool produced in /Users/dave/projects/play-scalajs/scalajs/target/resolution-cache/reports/browserapp-browserapp$sources_javadoc_sjs0.5_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (94ms resolve - 12ms download)[0m
