@@ -11,7 +11,7 @@ ScalaJs 0.5.0
 
 ScalaTags 0.3.0
 
-Scala.rx 0.2.5
+[Scala.rx 0.2.5](https://github.com/lihaoyi/scala.rx)
 
 
 
