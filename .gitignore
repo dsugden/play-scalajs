@@ -8,6 +8,8 @@ bin/
 /project/project
 /project/target
 /target
+/scalajs/target
+/common/target
 tmp/
 test-result
 server.pid
