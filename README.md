@@ -1,7 +1,9 @@
 play-scalajs
 ============
 
-Play project with scalajs subproject using scalatags and scala.rx
+Play project with a scalajs subproject and a common library.
+
+Highlights: scalatags and scala.rx for reactive dom rendering
 
 Play 2.3
 
