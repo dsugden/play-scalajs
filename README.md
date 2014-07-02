@@ -20,3 +20,8 @@ Scala 2.11.1
 Skeleton for using scalajs with Play for a rich client with server.
 
 TODO: Json serialization
+
+
+The code in /common is shared by Play and Scala.js.  It is compiled as a lib
+
+To compile, run: >sbt compile run
