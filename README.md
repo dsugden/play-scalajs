@@ -1,7 +1,7 @@
 play-scalajs
 ============
 
-Play project with a scalajs subproject and a common library.
+Skeleton play project with a scalajs subproject and a common library.
 
 Highlights: scalatags and scala.rx for reactive dom rendering
 
@@ -16,7 +16,9 @@ Scala 2.11.1
 [scala.rx 0.2.5](https://github.com/lihaoyi/scala.rx)
 
 
-
-Skeleton for using scalajs with Play for a rich client with server.
-
 TODO: Json serialization
+
+
+The code in /common is shared by Play and Scala.js.  It is compiled as a lib
+
+To compile, run: >sbt compile run
