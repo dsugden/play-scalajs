@@ -28,27 +28,26 @@ object ClientScalaViews {
           div(cls := "navbar-header")(
             a(cls:="navbar-brand", href:="#")("Play with Scala.js")
           ),
-          Rx{div(cls := "navbar-collapse collapse")( renderPages(session) )}
+          Rx{div(cls := "navbar-collapse collapse")( renderHeader(session) )}
         )
       ),
-      div(cls:="jumbotron")(
-        h3("Update Scene example")
-      )
+      Rx{div(cls:="jumbotron")(renderPage(session))}
     ).render
 
-  def renderPages(session:Var[BrowserSession]) ={
-    console.log("renderPages")
+  def renderHeader(session:Var[BrowserSession]) ={
     val lis:Seq[scalatags.JsDom.Node] = session().pages.all.map{p =>
     if(p._1)
       li(cls := "active")(a(href := "#")(p._2._1))
     else
       li()(a(href := "#", onclick := { () => {
-        console.log("----- " + session().toString)
         session() = session().copy(pages = session().pages.selectPage(p._2._1))
-        console.log("----- " + session().toString)
       }})(p._2._1))
     }.toSeq
     ul(cls:="nav navbar-nav")( lis : _* )
+  }
+
+  def renderPage(session:Var[BrowserSession]) = session().pages.selected.fold[JsDom.TypedTag[HTMLElement]](span()) { pageName =>
+    h2(pageName)
   }
 
 
