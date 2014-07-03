@@ -8,7 +8,7 @@ import com.typesafe.sbt.packager.universal.UniversalKeys
 
 object ApplicationBuild extends Build with UniversalKeys {
 
-  val scalajsOutputDir = Def.settingKey[File]("directory for javascript files output by scalajs")
+  val jsOutDir = Def.settingKey[File]("directory for scalajs js files")
 
   val sharedLibDir = "common"
 
@@ -39,7 +39,7 @@ object ApplicationBuild extends Build with UniversalKeys {
       resolvers +=  Resolver.url("scala-js-releases",
         url("http://dl.bintray.com/content/scala-js/scala-js-releases"))(
           Resolver.ivyStylePatterns),
-        scalajsOutputDir := (crossTarget in Compile).value / "classes" / "public" / "javascripts",
+      jsOutDir := (crossTarget in Compile).value / "classes" / "public" / "javascripts",
       compile in Compile <<= (compile in Compile) dependsOn (fastOptJS in (scalajs, Compile)),
       dist <<= dist dependsOn (fullOptJS in (scalajs, Compile)),
       addSharedLibSettingPlay,
@@ -47,7 +47,7 @@ object ApplicationBuild extends Build with UniversalKeys {
     ) ++ (
       // ask scalajs project to put its outputs in scalajsOutputDir
       Seq(packageExternalDepsJS, packageInternalDepsJS, packageExportedProductsJS, packageLauncher, fastOptJS, fullOptJS) map { packageJSKey =>
-        crossTarget in (scalajs, Compile, packageJSKey) := scalajsOutputDir.value
+        crossTarget in (scalajs, Compile, packageJSKey) := jsOutDir.value
       }
     )
 
@@ -76,14 +76,12 @@ object ApplicationBuild extends Build with UniversalKeys {
 
 object Dependencies {
   val common = Seq(
-//    "org.scalajs" %% "scalajs-pickling-play-json" % "0.3.1"
 	)
 
   val play = Seq(
     "org.webjars" % "jquery" % "1.9.0",
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "com.scalarx" %% "scalarx" % "0.2.5",
-//    "org.scalajs" % "scalajs-pickling-play-json_2.11" % "0.3.1",
 	"com.scalatags" %% "scalatags" % "0.3.5"
   )
 
@@ -93,7 +91,6 @@ object Dependencies {
 	"com.scalatags" %%% "scalatags" % "0.3.0",
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "com.scalarx" %%% "scalarx" % "0.2.5",
-//    "org.scalajs" % "scalajs-pickling_sjs0.5.0_2.11" % "0.3.1",
     "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.1",
     "org.scala-lang.modules.scalajs" %% "scalajs-jasmine-test-framework" % scalaJSVersion % "test"
   )
