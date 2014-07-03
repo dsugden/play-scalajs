@@ -1,5 +1,7 @@
 package controllers
 
+import common.models.BrowserSession
+import common.models.BrowserSession._
 import play.api._
 import play.api.libs.json.{JsString, Json}
 import play.api.mvc._
@@ -19,6 +21,10 @@ object Application extends Controller {
 
 
   implicit val udxReads = Json.reads[UpdateSceneX]
+
+
+
+  var browserSession:BrowserSession = BrowserSession.initial
 
 
   def index = Action {
