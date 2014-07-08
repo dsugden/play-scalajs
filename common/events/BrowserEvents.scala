@@ -1,6 +1,6 @@
 package common.events
 
-import common.models.Session
+import common.models.BrowserSession
 
 sealed trait BrowserEvent
 case class Page(name:String) extends BrowserEvent
@@ -10,9 +10,6 @@ case class UpdateSceneY(v:Int) extends BrowserEvent
 
 
 object BrowserEvents {
-
-
-  def updateX(v:Int): Session => Session  =_.copy(x = v)
 
 
 }

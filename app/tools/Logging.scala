@@ -3,7 +3,7 @@ package tools
 import play.api.Logger
 
 /**
- * @author patrick@tindr.ca
+ * @author patrick.premont@boldradius.com
  */
 case class Logging[V](v : V) {
   def logInfo(f: V => String) : V = {Logger.info(f(v)); v}

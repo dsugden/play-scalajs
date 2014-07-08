@@ -9,6 +9,10 @@ import scala.util.{Failure, Success}
 import scalatags.JsDom._
 import scalatags.JsDom.all._
 
+/**
+ * author:lihaoyi
+ */
+
 
 /**
  * A minimal binding between Scala.Rx and Scalatags and Scala-Js-Dom
@@ -35,12 +39,12 @@ object Framework {
       case Failure(e) => span(e.toString, backgroundColor := "red").render
     }
     var last = rSafe
-    Obs(r, skipInitial = true){
-      val newLast = rSafe
-      last.parentElement.replaceChild(newLast, last)
-      last = newLast
-    }
-    bindElement(last)
+      Obs(r, skipInitial = true){
+        val newLast = rSafe
+        last.parentElement.replaceChild(newLast, last)
+        last = newLast
+      }
+      bindElement(last)
   }
   implicit def RxAttrValue[T: AttrValue] = new AttrValue[Rx[T]]{
     def apply(t: Element, a: Attr, r: Rx[T]): Unit = {
