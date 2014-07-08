@@ -98,7 +98,15 @@ object BrowserApp extends js.JSApp {
                 case (PageOne(name,v)) => {
                   div(
                     div(input(tpe:="text", value:= pageOneRx().value)),
-                    div( input(tpe:="text", id:="temp", value:= pageOneVal2()), onkeydown:= { () => pageOneVal3() = pageOneVal3() + " t "}),
+                    div( input(tpe:="text", id:="temp", value:= pageOneVal2()), onkeydown:= {
+                      () =>
+                        pageOneVal3() = {
+                          currentDocument.getElementById("temp") match {
+                            case in:HTMLInputElement => in.value
+                          }
+
+                        }
+                    }),
                     Rx{div( input(tpe:="text", id:="temp", value:= pageOneVal3()))}
                   )
                 }
