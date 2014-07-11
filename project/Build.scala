@@ -82,15 +82,19 @@ object Dependencies {
     "org.webjars" % "jquery" % "1.9.0",
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "com.scalarx" %% "scalarx" % "0.2.5",
-	"com.scalatags" %% "scalatags" % "0.3.5"
+    "com.lihaoyi" %% "upickle" % "0.1.4",
+	  "com.scalatags" %% "scalatags" % "0.3.8",
+    "com.lihaoyi" %% "autowire" % "0.1.0"
   )
 
   val scalajs = Seq(
     "org.scala-lang.modules.scalajs" %%% "scalajs-dom" % Versions.scalajsDom,
-	"org.scala-lang.modules.scalajs" %%% "scalajs-jquery" % "0.6",
-	"com.scalatags" %%% "scalatags" % "0.3.0",
+	  "org.scala-lang.modules.scalajs" %%% "scalajs-jquery" % "0.6",
+    "com.scalatags" %%% "scalatags" % "0.3.8",
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "com.scalarx" %%% "scalarx" % "0.2.5",
+    "com.lihaoyi" %%% "upickle" % "0.1.4",
+    "com.lihaoyi" %%% "autowire" % "0.1.0",
     "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.1",
     "org.scala-lang.modules.scalajs" %% "scalajs-jasmine-test-framework" % scalaJSVersion % "test"
   )

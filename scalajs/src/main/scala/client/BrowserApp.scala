@@ -2,7 +2,7 @@ package client
 
 import client.ClientScalaViews.console
 import common.events._
-import common.models.{PageOne, BrowserSession}
+import common.models.{SpreadSheet, BrowserSession}
 
 import scala.scalajs.js
 import js.Dynamic.{ global => g }
@@ -11,12 +11,10 @@ import org.scalajs.dom._
 import org.scalajs.jquery.{JQueryAjaxSettings, JQueryXHR, jQuery}
 import scala.scalajs.js.{ThisFunction0, ThisFunction1}
 import scala.scalajs.js.annotation.JSExport
+import scala.util.{Failure, Success, Try}
 import scalatags.JsDom
 import scalatags.JsDom._
-import all.{div,cls,id,a,href,li,onclick,ul,span,h2,input,tpe,value,onkeydown}
-//import tags._
-import scalaz._, Scalaz._
-import ClientScalaViews._
+import all._
 import Logging._
 import rx._
 import Framework._
@@ -30,101 +28,118 @@ object BrowserApp extends js.JSApp {
 
   val selectedPage = Var(browserSession.selected)
 
-  val pageOneRx:Var[PageOne] = Var(browserSession.pages._1)
 
-  val pageOneVal2 = Var("0")
-  val pageOneVal3 = Var("0")
+  val pageOneVal2 = Var(0)
+  val pageOneVal2Error = Var("")
+  val pageOneVal3 = Var(0)
+  val pageOneVal3Error = Var("")
 
-  val pageOneRes = Rx{ pageOneVal2() + pageOneVal3()}
+  val pageOneTotal = Rx{ pageOneVal2() + pageOneVal3() }
+
+
+
+
+
+  val onkeyup = "onkeyup".attr
+
+
+
 
 
   type DefTag = JsDom.TypedTag[HTMLElement]
 
 
-
-  def main(): Unit = {
-    currentDocument.logDebug("main() currentDocument " ++ _.toString )
-    currentDocument.body.appendChild( renderBrowserSession )
+//  fromTryCatch(in.value.toInt).fold(error => pageOneVal2Error() = "Not a number",pageOneVal2() = _ )
 
 
-    def renderBrowserSession = {
-      "renderBrowserSession ".logDebug(_.toString)
-      div(cls := "container")(
-        div(cls := "navbar navbar-default")(
-          div(cls := "container-fluid")(
-            div(cls := "navbar-header")(
-              a(cls := "navbar-brand", href := "#")("Play with Scala.js")
-            ),
-            div(cls := "navbar-collapse collapse")( Rx { renderHeader } )
-          )
-        ),
-        Rx {
-          div(cls := "jumbotron")(renderPage)
-        },
-        renderNoSessionRx
-      ).render
+  val changePage2 =  () => {
+    currentDocument.getElementById("pageOneVal2") match {
+      case in: HTMLInputElement =>
+        Try(in.value.toInt) match {
+          case Success(i) => pageOneVal2() = i
+          case Failure(t) => {
+            pageOneVal2() = 0
+            pageOneVal2Error() = "Not a number"
+          }
+        }
+      case _ => {}
     }
+  }
 
-    def renderHeader ={
-      "renderHeader ".logDebug(_.toString)
-      val lis:Seq[scalatags.JsDom.Node] = browserSession.pageNames.map{p =>
-        if(selectedPage().fold(false)(sp => p._2 == sp))
-          li(cls := "active")(a(href := "#")(p._2))
-        else
-          li()(a(href := "#", onclick := { () => {
-            selectedPage().logDebug(_.toString)
-            selectedPage() = Some(p._2)
-          }})(p._2))
-      }.toSeq
-      ul(cls:="nav navbar-nav")( lis : _* )
+  val changePage3 =  () => {
+    pageOneVal3() = {
+      currentDocument.getElementById("pageOneVal3") match {
+        case in: HTMLInputElement => in.value.toInt
+      }
     }
+  }
 
 
 
-    def ke(input:HTMLInputElement)(e:Event) = e match {
-      case k: KeyboardEvent =>  pageOneVal2() = input.value
-    }
-
-
-    def renderPage = {
-      "renderPage ".logDebug(_.toString)
-
-      div(
-        selectedPage().fold[DefTag](span()) { pageName =>
-          div(
-            h2(pageName),
-            browserSession.getPage(pageName).fold[DefTag](span){ page =>
-              page match {
-                case (PageOne(name,v)) => {
+  def renderBrowserSession = {
+    "renderBrowserSession ".logDebug(_.toString)
+    div(cls := "container")(
+      div(cls := "navbar navbar-default")(
+        div(cls := "container-fluid")(
+          div(cls := "navbar-header")(
+            a(cls := "navbar-brand", href := "#")("Play with Scala.js")
+          ),
+          div(cls := "navbar-collapse collapse")( Rx {
+            val lis:Seq[scalatags.JsDom.Modifier] = browserSession.pageNames.map{p =>
+              if(selectedPage().fold(false)(sp => p._2 == sp))
+                li(cls := "active")(a(href := "#")(p._2))
+              else
+                li()(a(href := "#", all.onclick := { () => {
+                  selectedPage().logDebug(_.toString)
+                  selectedPage() = Some(p._2)
+                }})(p._2))
+            }.toSeq
+            ul(cls:="nav navbar-nav")( lis : _* )
+          } )
+        )
+      ),
+      div(all.id :="content"),
+      Rx {
+        div(
+          selectedPage().fold[DefTag](span()) { pageName =>
+            div(
+              h2(pageName),
+              browserSession.getPage(pageName).fold[DefTag](span) {
+                case (SpreadSheet(name, v)) => {
                   div(
-                    div(input(tpe:="text", value:= pageOneRx().value)),
-                    div( input(tpe:="text", id:="temp", value:= pageOneVal2()), onkeydown:= {
-                      () =>
-                        pageOneVal3() = {
-                          currentDocument.getElementById("temp") match {
-                            case in:HTMLInputElement => in.value
-                          }
-
-                        }
-                    }),
-                    Rx{div( input(tpe:="text", id:="temp", value:= pageOneVal3()))}
+                    span(input(tpe := "text", width:= "100", all.id := "pageOneVal2",onkeyup := changePage2)),
+                    span(" + "),
+                    span(input(tpe := "text", all.id := "pageOneVal3",onkeyup := changePage3)),
+                    span(" = "),
+                    Rx{
+                      span(input(tpe := "text", all.id := "pageOneTotal", value := pageOneTotal()))
+                    }
                   )
                 }
                 case _ => span("XXX")
               }
-            }
-          )
-        }
-
-      )
-
-    }
-
-    def renderNoSessionRx = {
-      "renderNoSessionRx ".logDebug(_.toString)
+            )
+          }
+        )
+      },
       div("this doesn't depend on the session, no Rx{ }")
+    ).render
+  }
 
-    }
+
+  def main(): Unit = {
+    currentDocument.logDebug("main() currentDocument " ++ _.toString )
+    currentDocument.body.appendChild( renderBrowserSession )
+//    currentDocument.getElementById("content").appendChild(renderHeader.render)
+    jQuery.apply("#content").logDebug("**** " ++ _.toString).append(div("sd").render)
+
+
+
+
+
+
+
+
 
 
     def toAny(event:BrowserEvent) = event match {

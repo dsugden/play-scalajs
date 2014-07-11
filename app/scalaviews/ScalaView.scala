@@ -2,6 +2,7 @@ package scalaviews
 
 import controllers.routes
 
+import scalatags.Text.all._
 import scalatags.Text._
 import scalatags.Text.all._
 

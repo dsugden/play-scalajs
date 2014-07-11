@@ -6,7 +6,7 @@ import rx._
 import rx.core.Obs
 
 import scala.util.{Failure, Success}
-import scalatags.JsDom._
+import org.scalajs.dom
 import scalatags.JsDom.all._
 
 /**
@@ -23,7 +23,7 @@ object Framework {
    * Wraps reactive strings in spans, so they can be referenced/replaced
    * when the Rx changes.
    */
-  implicit def RxStr[T](r: Rx[T])(implicit f: T => Node): Node = {
+  implicit def RxStr[T](r: Rx[T])(implicit f: T => Modifier): Modifier = {
     rxMod(Rx(span(r())))
   }
 
@@ -33,7 +33,7 @@ object Framework {
    * the Obs onto the element itself so we have a reference to kill it when
    * the element leaves the DOM (e.g. it gets deleted).
    */
-  implicit def rxMod[T <: dom.HTMLElement](r: Rx[HtmlTag]): Node = {
+  implicit def rxMod[T <: dom.HTMLElement](r: Rx[HtmlTag]): Modifier = {
     def rSafe = r.toTry match {
       case Success(v) => v.render
       case Failure(e) => span(e.toString, backgroundColor := "red").render
