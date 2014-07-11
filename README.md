@@ -11,7 +11,7 @@ Scala 2.11.1
 
 [Scala.js 0.5.0](http://www.scala-js.org/)
 
-[scalatags 0.3.0](https://github.com/lihaoyi/scalatags)
+[scalatags 0.3.8](https://github.com/lihaoyi/scalatags)
 
 [scala.rx 0.2.5](https://github.com/lihaoyi/scala.rx)
 
