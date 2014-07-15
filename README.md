@@ -15,9 +15,7 @@ Scala 2.11.1
 
 [scala.rx 0.2.5](https://github.com/lihaoyi/scala.rx)
 
-
-TODO: Json serialization
-
+[upickle 0.2.5](https://github.com/lihaoyi/upickle)
 
 The code in /common is shared by Play and Scala.js.  It is compiled as a lib
 
