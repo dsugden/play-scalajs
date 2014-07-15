@@ -65,6 +65,7 @@ object ApplicationBuild extends Build with UniversalKeys {
   lazy val commonSettings =
     Seq(
       name := "comSettings",
+      scalaVersion := Versions.scala,
       scalaSource in Compile := baseDirectory.value,
       libraryDependencies ++= Dependencies.common
     )
@@ -76,13 +77,14 @@ object ApplicationBuild extends Build with UniversalKeys {
 
 object Dependencies {
   val common = Seq(
+    "com.lihaoyi" %% "upickle" % "0.1.5"
 	)
 
   val play = Seq(
     "org.webjars" % "jquery" % "1.9.0",
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "com.scalarx" %% "scalarx" % "0.2.5",
-    "com.lihaoyi" %% "upickle" % "0.1.4",
+    "com.lihaoyi" %% "upickle" % "0.1.5",
 	  "com.scalatags" %% "scalatags" % "0.3.8",
     "com.lihaoyi" %% "autowire" % "0.1.0"
   )
@@ -93,7 +95,7 @@ object Dependencies {
     "com.scalatags" %%% "scalatags" % "0.3.8",
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "com.scalarx" %%% "scalarx" % "0.2.5",
-    "com.lihaoyi" %%% "upickle" % "0.1.4",
+    "com.lihaoyi" %%% "upickle" % "0.1.5",
     "com.lihaoyi" %%% "autowire" % "0.1.0",
     "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.1",
     "org.scala-lang.modules.scalajs" %% "scalajs-jasmine-test-framework" % scalaJSVersion % "test"

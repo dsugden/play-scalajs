@@ -1,7 +1,6 @@
 package client
 
-import common.events.{Page, UpdateSceneX, BrowserEvent}
-import common.models.{PageOne, BrowserSession}
+import common.models.{BrowserSession}
 
 import scala.scalajs.js
 import js.Dynamic.{ global => g }

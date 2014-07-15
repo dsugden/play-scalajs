@@ -1,6 +1,10 @@
 package common.models
 
 
+import upickle._
+import Implicits._
+
+
 
 
 
@@ -19,6 +23,13 @@ object BrowserSession{
 
   def initial:BrowserSession =
     BrowserSession((SpreadSheet("Spread Sheet",100),PageTwo("PageTwo"),PageThree("PageThree")),None)
+
+
+  implicit val spreadSheetPickler = Case2ReadWriter(SpreadSheet.apply, SpreadSheet.unapply)
+  implicit val pageTwoPickler = Case1ReadWriter(PageTwo.apply, PageTwo.unapply)
+  implicit val pageThreePickler = Case1ReadWriter(PageThree.apply, PageThree.unapply)
+
+  implicit val browserSessionPickler = Case2ReadWriter(BrowserSession.apply, BrowserSession.unapply)
 
 }
 

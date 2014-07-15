@@ -18,6 +18,8 @@ import all._
 import Logging._
 import rx._
 import Framework._
+import upickle._
+import Implicits._
 
 
 object BrowserApp extends js.JSApp {
@@ -126,57 +128,34 @@ object BrowserApp extends js.JSApp {
     ).render
   }
 
+  @JSExport
+  def updatedBrowserSession:( js.Any, js.String, JQueryXHR) => {} =
+    (data, textStatus, jqXHR) => {
+    console.log("updatedBrowserSession data: " + data.toString)
+  }
+
+  @JSExport
+  def emitBrowserEvent(event:BrowserEvent) = {
+    jQuery.ajax(js.Dynamic.literal(
+      url = "/browserEvent",
+      data = write(event),
+      contentType = "application/json",
+      success = { updatedBrowserSession },
+      error = { (jqXHR: JQueryXHR, textStatus: js.String, errorThrow: js.String) =>
+         console.log(s"jqXHR=$jqXHR,text=$textStatus,err=$errorThrow")
+      },
+      `type` = "POST"
+    ).asInstanceOf[JQueryAjaxSettings])
+
+  }
+
+
 
   def main(): Unit = {
     currentDocument.logDebug("main() currentDocument " ++ _.toString )
     currentDocument.body.appendChild( renderBrowserSession )
-//    currentDocument.getElementById("content").appendChild(renderHeader.render)
     jQuery.apply("#content").logDebug("**** " ++ _.toString).append(div("sd").render)
-
-
-
-
-
-
-
-
-
-
-    def toAny(event:BrowserEvent) = event match {
-      case UpdateSceneX(value) => js.Dynamic.literal(v = value)
-      case Page(value) => js.Dynamic.literal(name = value)
-      case _ => js.Dynamic.literal(v = 0)
-    }
-
-    def emitBrowserEvent(event:scala.scalajs.js.Any) = {
-
-      val data =  js.JSON.stringify(event).toString
-      //    console.log("data " + data)
-      jQuery.ajax(js.Dynamic.literal(
-        url = "/browserEvent",
-        data = js.JSON.stringify(event).toString,
-        contentType = "application/json",
-        success = { (data: js.Any, textStatus: js.String, jqXHR: JQueryXHR) =>
-          //        console.log(s"data=$data,text=$textStatus,jqXHR=$jqXHR")
-          console.log("emitBrowserEvent data: " + data.toString)
-          //        var o = jQuery.parseJSON(data.toString)
-          //        console.log("emitBrowserEvent data: " + scala.scalajs.js.JSON.parse(data.toString))
-          //        updateLabel(data.toString)
-        },
-        error = { (jqXHR: JQueryXHR, textStatus: js.String, errorThrow: js.String) =>
-          //        console.log(s"jqXHR=$jqXHR,text=$textStatus,err=$errorThrow")
-        },
-        `type` = "POST"
-      ).asInstanceOf[JQueryAjaxSettings])
-
-    }
-
-
-
-
-
-
-
+    emitBrowserEvent(Initial)
   }
 
 

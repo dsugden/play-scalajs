@@ -14,14 +14,12 @@ import scalaviews.ScalaView._
 import tools.Logging._
 
 import common.events._
+import upickle._
+import common.events.BrowserEvents._
 
 
 
 object Application extends Controller {
-
-
-  implicit val udxReads = Json.reads[UpdateSceneX]
-
 
 
   var browserSession:BrowserSession = BrowserSession.initial
@@ -33,23 +31,20 @@ object Application extends Controller {
 
   def getInitialScene= Action{
     implicit request => {
-      val res = request.body.logDebug("getInitialScene " ++ _.toString).asJson.fold(Json.toJson("Not a valid request"))(
-        _.validate[UpdateSceneX].fold(e => Json.toJson("didn't validate"),
-          valid => JsString("s"))
-      )
+      val res = write(browserSession)
       Ok(res)
     }
   }
 
-
-
   def browserEvent = Action {
     implicit request => {
-      val res = request.body.logDebug("browserEvent " ++ _.toString).asJson.fold(Json.toJson("Not a valid request"))(
-      _.validate[UpdateSceneX].fold(e => Json.toJson("didn't validate"),
-      valid => JsString("s"))
-      )
-      Ok(res)
+      request.body.asJson.fold(Ok("a")){json =>
+        read[BrowserEvent](json.toString).logDebug(" parsed " ++ _.toString) match {
+          case Initial => Ok(write(browserSession).logDebug("writing browserSession " ++ _.toString))
+          case _ =>Ok("b")
+        }
+
+      }
     }
 
   }
