@@ -20,61 +20,92 @@ import rx._
 import Framework._
 import upickle._
 import Implicits._
+//import Pickle._
 
 
 object BrowserApp extends js.JSApp {
 
-  var currentDocument =  dom.document
-  implicit val console = g.console
-  val browserSession = BrowserSession.initial
 
+  // for logging
+  implicit val console = g.console
+
+  var browserSession = BrowserSession.initial
+
+
+  //  Reactive Var for current page
   val selectedPage = Var(browserSession.selected)
 
+  // Reactive Vars for SpreadSheet example
+  case class SpreadSheetVal(value:Var[Int],error:Var[Option[String]])
+  val spreadsheetA = SpreadSheetVal(Var(0),Var(None))
+  val spreadsheetB = SpreadSheetVal(Var(0),Var(None))
 
-  val pageOneVal2 = Var(0)
-  val pageOneVal2Error = Var("")
-  val pageOneVal3 = Var(0)
-  val pageOneVal3Error = Var("")
+  val spreadsheetAErrorCls = Rx{ cls := spreadsheetA.error().fold("form-group")(_ => "form-group has-error")}
+  val spreadsheetBErrorCls = Rx{ cls := spreadsheetB.error().fold("form-group")(_ => "form-group has-error")}
 
-  val pageOneTotal = Rx{ pageOneVal2() + pageOneVal3() }
+  val pageOneTotal = Rx{ spreadsheetA.value() + spreadsheetB.value() }
 
-
-
-
-
+  // This was missing from scalatags (?!)
   val onkeyup = "onkeyup".attr
-
-
-
 
 
   type DefTag = JsDom.TypedTag[HTMLElement]
 
 
-//  fromTryCatch(in.value.toInt).fold(error => pageOneVal2Error() = "Not a number",pageOneVal2() = _ )
+  /**
+   * App starts here
+   * Ask the server for BrowserSession
+   */
+  def main(): Unit = {
+    emitBrowserEvent(Initial,() => dom.document.body.appendChild( renderBrowserSession )  )
+  }
 
 
-  val changePage2 =  () => {
-    currentDocument.getElementById("pageOneVal2") match {
-      case in: HTMLInputElement =>
-        Try(in.value.toInt) match {
-          case Success(i) => pageOneVal2() = i
-          case Failure(t) => {
-            pageOneVal2() = 0
-            pageOneVal2Error() = "Not a number"
-          }
+  def updatedBrowserSession(thenDo:() => Unit):( js.Any, js.String, JQueryXHR) => {} =
+    (data, textStatus, jqXHR) => {
+      console.log("updatedBrowserSession data: " + data.toString)
+      browserSession = read[BrowserSession](data.toString)
+      browserSession.logDebug("******  " ++ _.toString)
+      spreadsheetA.value() = browserSession.pages._1.value
+      thenDo()
+      Unit
+    }
+
+  def emitBrowserEvent(event:BrowserEvent,thenDo:() => Unit) = {
+    jQuery.ajax(js.Dynamic.literal(
+      url = "/browserEvent",
+      data = write[BrowserEvent](event),
+      contentType = "application/json",
+      success = { updatedBrowserSession(thenDo) },
+      error = { (jqXHR: JQueryXHR, textStatus: js.String, errorThrow: js.String) =>
+        console.log(s"jqXHR=$jqXHR,text=$textStatus,err=$errorThrow")
+      },
+      `type` = "POST"
+    ).asInstanceOf[JQueryAjaxSettings])
+  }
+
+
+
+
+  def changeSpreadSheetVal( spVal:SpreadSheetVal, id:String ) =  () => {
+    dom.document.getElementById(id) match {
+      case in: HTMLInputElement => if(in.value.length == 0 ){
+        spVal.error() = None
+        spVal.value() = 0
+      }else{
+        Try(in.value.toInt).toOption.fold[Unit]( {
+          spVal.error() = Some("Not a number")
+          spVal.value() = 0
+        }){i =>
+          spVal.error() = None
+          spVal.value() = i
         }
+      }
       case _ => {}
     }
   }
 
-  val changePage3 =  () => {
-    pageOneVal3() = {
-      currentDocument.getElementById("pageOneVal3") match {
-        case in: HTMLInputElement => in.value.toInt
-      }
-    }
-  }
+
 
 
 
@@ -86,18 +117,17 @@ object BrowserApp extends js.JSApp {
           div(cls := "navbar-header")(
             a(cls := "navbar-brand", href := "#")("Play with Scala.js")
           ),
-          div(cls := "navbar-collapse collapse")( Rx {
-            val lis:Seq[scalatags.JsDom.Modifier] = browserSession.pageNames.map{p =>
-              if(selectedPage().fold(false)(sp => p._2 == sp))
-                li(cls := "active")(a(href := "#")(p._2))
-              else
-                li()(a(href := "#", all.onclick := { () => {
-                  selectedPage().logDebug(_.toString)
-                  selectedPage() = Some(p._2)
+          div(cls := "navbar-collapse collapse")(
+           // Rendering of <ul><li>..</ul> will be kicked when selectedPage is mutated
+            Rx {
+              val lis:Seq[scalatags.JsDom.Modifier] = browserSession.pageNames.map{ p =>
+                li(cls := Rx{ if(selectedPage().contains(p._2)) "active" else "" })(a(href := "#",all.onclick := { () => {
+                  selectedPage() = Some(p._2)  // this mutation is observed
                 }})(p._2))
             }.toSeq
             ul(cls:="nav navbar-nav")( lis : _* )
-          } )
+          }
+          )
         )
       ),
       div(all.id :="content"),
@@ -109,12 +139,27 @@ object BrowserApp extends js.JSApp {
               browserSession.getPage(pageName).fold[DefTag](span) {
                 case (SpreadSheet(name, v)) => {
                   div(
-                    span(input(tpe := "text", width:= "100", all.id := "pageOneVal2",onkeyup := changePage2)),
-                    span(" + "),
-                    span(input(tpe := "text", all.id := "pageOneVal3",onkeyup := changePage3)),
-                    span(" = "),
+                    div( cls := Rx{spreadsheetA.error().fold("form-group")(_ => "form-group has-error")})(
+                      label(cls:="control-label")(Rx{spreadsheetA.error().fold("")(identity)}),
+                      input(tpe := "text",
+                            cls := "form-control",
+                             width:= "100",
+                             all.id := "spreadsheetA",
+                             value := browserSession.pages._1.value, // initial value
+                             onkeyup := changeSpreadSheetVal(spreadsheetA,"spreadsheetA"))
+                    ),
+                    span("+"),
+                    div(cls := Rx{spreadsheetB.error().fold("form-group")(_ => "form-group has-error")})(
+                      label(cls:="control-label")(Rx{spreadsheetB.error().fold("")(identity)}),
+                      input(tpe := "text",
+                            cls := "form-control",
+                            width:= "100",
+                            all.id := "spreadsheetB",
+                            onkeyup := changeSpreadSheetVal(spreadsheetB,"spreadsheetB"))
+                    ),
+                    span("="),
                     Rx{
-                      span(input(tpe := "text", all.id := "pageOneTotal", value := pageOneTotal()))
+                      div(cls:="form-group" )(input(tpe := "text", cls := "form-control",width:= "100",value := pageOneTotal()))
                     }
                   )
                 }
@@ -124,39 +169,12 @@ object BrowserApp extends js.JSApp {
           }
         )
       },
-      div("this doesn't depend on the session, no Rx{ }")
+      div("This Div doesn't depend on the session, no Rx{ }, never gets re-rendered")
     ).render
   }
 
-  @JSExport
-  def updatedBrowserSession:( js.Any, js.String, JQueryXHR) => {} =
-    (data, textStatus, jqXHR) => {
-    console.log("updatedBrowserSession data: " + data.toString)
-  }
-
-  @JSExport
-  def emitBrowserEvent(event:BrowserEvent) = {
-    jQuery.ajax(js.Dynamic.literal(
-      url = "/browserEvent",
-      data = write(event),
-      contentType = "application/json",
-      success = { updatedBrowserSession },
-      error = { (jqXHR: JQueryXHR, textStatus: js.String, errorThrow: js.String) =>
-         console.log(s"jqXHR=$jqXHR,text=$textStatus,err=$errorThrow")
-      },
-      `type` = "POST"
-    ).asInstanceOf[JQueryAjaxSettings])
-
-  }
 
 
-
-  def main(): Unit = {
-    currentDocument.logDebug("main() currentDocument " ++ _.toString )
-    currentDocument.body.appendChild( renderBrowserSession )
-    jQuery.apply("#content").logDebug("**** " ++ _.toString).append(div("sd").render)
-    emitBrowserEvent(Initial)
-  }
 
 
 

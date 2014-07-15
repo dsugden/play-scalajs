@@ -9,6 +9,9 @@ import Implicits._
 
 
 
+
+
+
 sealed trait Page{
   val name:String
 }
@@ -39,11 +42,7 @@ case class BrowserSession(pages:(SpreadSheet,PageTwo,PageThree),selected:Option[
   implicit def tupleToList(t:(SpreadSheet,PageTwo,PageThree)):List[Page] = List(t._1,t._2,t._3)
 
   def pageNames:List[(Boolean,String)] =pages.map(p => (selected == Some(p.name),p.name) )
-
-
   def getPage(name:String):Option[Page] = pages.find(_.name == name)
-
-
   def selectPage(name:String):BrowserSession = pageNames.map(_._2).find(_ == name).fold(this)(_ => copy(selected = Some(name)))
 
 
