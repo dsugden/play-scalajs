@@ -97,7 +97,7 @@ object Dependencies {
     "com.scalarx" %%% "scalarx" % "0.2.5",
     "com.lihaoyi" %%% "upickle" % "0.1.5",
     "com.lihaoyi" %%% "autowire" % "0.1.0",
-    "org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.1",
+    "com.github.japgolly.fork.scalaz" %%% "scalaz-core" % "7.1.0-RC1",
     "org.scala-lang.modules.scalajs" %% "scalajs-jasmine-test-framework" % scalaJSVersion % "test"
   )
 }

@@ -16,7 +16,7 @@ sealed trait Page{
   val name:String
 }
 case class SpreadSheet(name:String,value:Int) extends Page
-case class PageTwo(name:String) extends Page
+case class PageTwo(name:String, value:Int) extends Page
 case class PageThree(name:String) extends Page
 
 
@@ -25,11 +25,11 @@ object BrowserSession{
 
 
   def initial:BrowserSession =
-    BrowserSession((SpreadSheet("Spread Sheet",100),PageTwo("PageTwo"),PageThree("PageThree")),None)
+    BrowserSession((SpreadSheet("Spread Sheet",100),PageTwo("PageTwo",22),PageThree("PageThree")),None)
 
 
   implicit val spreadSheetPickler = Case2ReadWriter(SpreadSheet.apply, SpreadSheet.unapply)
-  implicit val pageTwoPickler = Case1ReadWriter(PageTwo.apply, PageTwo.unapply)
+  implicit val pageTwoPickler = Case2ReadWriter(PageTwo.apply, PageTwo.unapply)
   implicit val pageThreePickler = Case1ReadWriter(PageThree.apply, PageThree.unapply)
 
   implicit val browserSessionPickler = Case2ReadWriter(BrowserSession.apply, BrowserSession.unapply)

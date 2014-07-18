@@ -2,7 +2,7 @@ package client
 
 import client.ClientScalaViews.console
 import common.events._
-import common.models.{SpreadSheet, BrowserSession}
+import common.models.{PageTwo, SpreadSheet, BrowserSession}
 
 import scala.scalajs.js
 import js.Dynamic.{ global => g }
@@ -20,8 +20,8 @@ import rx._
 import Framework._
 import upickle._
 import Implicits._
-//import Pickle._
-
+import scalaz._
+import Scalaz._
 
 object BrowserApp extends js.JSApp {
 
@@ -32,18 +32,56 @@ object BrowserApp extends js.JSApp {
   var browserSession = BrowserSession.initial
 
 
-  //  Reactive Var for current page
-  val selectedPage = Var(browserSession.selected)
+  /*  Reactive Var for current page -> when this changes, any Rx{} closed over this will be re-eval'd
+      and any Obs{} on that wil refire    */
+  val selectedPage:Var[Option[String]] = Var(browserSession.selected)
 
   // Reactive Vars for SpreadSheet example
   case class SpreadSheetVal(value:Var[Int],error:Var[Option[String]])
-  val spreadsheetA = SpreadSheetVal(Var(0),Var(None))
+
+  // Type for value + maybe error
+  val spreadsheetA =  SpreadSheetVal(Var(browserSession.pages._1.value),Var(None))
   val spreadsheetB = SpreadSheetVal(Var(0),Var(None))
 
+
+  // These are the actual HTMLInputElement "streams": String
+  val spreadSheetAInput = Var("")
+  val spreadSheetBInput = Var("")
+
+  // First transformation is error checking for Int
+  val spreadsheetA_Rx = Rx{ updateSpreadSheetVal( spreadSheetAInput(),spreadsheetA) }
+  val spreadsheetB_Rx = Rx{ updateSpreadSheetVal( spreadSheetBInput(),spreadsheetB) }
+
+  // Parrallel DOM transformation to show error
   val spreadsheetAErrorCls = Rx{ cls := spreadsheetA.error().fold("form-group")(_ => "form-group has-error")}
   val spreadsheetBErrorCls = Rx{ cls := spreadsheetB.error().fold("form-group")(_ => "form-group has-error")}
 
+
+  // declare reactive "relationship"
   val pageOneTotal = Rx{ spreadsheetA.value() + spreadsheetB.value() }
+
+
+
+
+
+  def updateSpreadSheetVal(input:String, spv: SpreadSheetVal) = {
+    Validation.fromTryCatch(input.toInt).fold( error =>{
+      if(input == "" ){
+        spv.value.update(0)
+        spv.error.update(None)
+      }else{
+        spv.value.update(0)
+        spv.error.update(Some("Not a number"))
+      }
+    }, i => {
+      i.logDebug("Updating A " ++ _.toString)
+      spv.value.update(i)
+      spv.error.update(None)
+    })
+  }
+
+
+
 
   // This was missing from scalatags (?!)
   val onkeyup = "onkeyup".attr
@@ -85,20 +123,24 @@ object BrowserApp extends js.JSApp {
   }
 
 
+  def getEl(id:String):Option[HTMLInputElement] =  dom.document.getElementById(id) match {
+    case in: HTMLInputElement => Some(in)
+    case _ => None
+  }
 
 
   def changeSpreadSheetVal( spVal:SpreadSheetVal, id:String ) =  () => {
     dom.document.getElementById(id) match {
       case in: HTMLInputElement => if(in.value.length == 0 ){
-        spVal.error() = None
-        spVal.value() = 0
+        spVal.error.update(None)
+        spVal.value.update(0)
       }else{
         Try(in.value.toInt).toOption.fold[Unit]( {
           spVal.error() = Some("Not a number")
           spVal.value() = 0
         }){i =>
-          spVal.error() = None
-          spVal.value() = i
+          spVal.error.update(None)
+          spVal.value.update(i)
         }
       }
       case _ => {}
@@ -117,17 +159,21 @@ object BrowserApp extends js.JSApp {
           div(cls := "navbar-header")(
             a(cls := "navbar-brand", href := "#")("Play with Scala.js")
           ),
-          div(cls := "navbar-collapse collapse")(
-           // Rendering of <ul><li>..</ul> will be kicked when selectedPage is mutated
-            Rx {
-              val lis:Seq[scalatags.JsDom.Modifier] = browserSession.pageNames.map{ p =>
-                li(cls := Rx{ if(selectedPage().contains(p._2)) "active" else "" })(a(href := "#",all.onclick := { () => {
-                  selectedPage() = Some(p._2)  // this mutation is observed
-                }})(p._2))
-            }.toSeq
-            ul(cls:="nav navbar-nav")( lis : _* )
-          }
-          )
+          div(cls := "navbar-collapse collapse")
+          // Rendering of class will be kicked when selectedPage is mutated
+            {
+              Rx {
+                val lis: Seq[scalatags.JsDom.Modifier] = browserSession.pageNames.map { p =>
+                  li(cls := Rx {
+                    if (selectedPage().contains(p._2)) "active" else ""
+                  })(a(href := "#", all.onclick := { () => {
+                    selectedPage.update(Some(p._2)) // this mutation is observed
+                  }
+                  })(p._2))
+                }.toSeq
+                ul(cls := "nav navbar-nav")(lis: _*)
+              }
+            }
         )
       ),
       div(all.id :="content"),
@@ -139,14 +185,19 @@ object BrowserApp extends js.JSApp {
               browserSession.getPage(pageName).fold[DefTag](span) {
                 case (SpreadSheet(name, v)) => {
                   div(
-                    div( cls := Rx{spreadsheetA.error().fold("form-group")(_ => "form-group has-error")})(
+                   /*
+                     This div will have it's class tag changed "reactively"
+                    */
+                    div( cls := Rx{
+                      spreadsheetA.error().cata(_ => "form-group has-error","form-group")
+                    })(
                       label(cls:="control-label")(Rx{spreadsheetA.error().fold("")(identity)}),
                       input(tpe := "text",
                             cls := "form-control",
                              width:= "100",
                              all.id := "spreadsheetA",
                              value := browserSession.pages._1.value, // initial value
-                             onkeyup := changeSpreadSheetVal(spreadsheetA,"spreadsheetA"))
+                             onkeyup := { () => {getEl("spreadsheetA").map(v => spreadSheetAInput() = v.value )}})
                     ),
                     span("+"),
                     div(cls := Rx{spreadsheetB.error().fold("form-group")(_ => "form-group has-error")})(
@@ -155,7 +206,7 @@ object BrowserApp extends js.JSApp {
                             cls := "form-control",
                             width:= "100",
                             all.id := "spreadsheetB",
-                            onkeyup := changeSpreadSheetVal(spreadsheetB,"spreadsheetB"))
+                            onkeyup :=  { () => {getEl("spreadsheetB").map(v => spreadSheetBInput() = v.value )}})
                     ),
                     span("="),
                     Rx{
@@ -163,6 +214,8 @@ object BrowserApp extends js.JSApp {
                     }
                   )
                 }
+
+                case PageTwo(name,value) => renderPageTwoComponent(value)
                 case _ => span("XXX")
               }
             )
@@ -171,6 +224,17 @@ object BrowserApp extends js.JSApp {
       },
       div("This Div doesn't depend on the session, no Rx{ }, never gets re-rendered")
     ).render
+  }
+
+
+  def renderPageTwoComponent(initial:Int) = {
+    val page2var = Var(initial)
+    val page2res =  Rx{ page2var() }
+    div(
+      div( page2res ),
+      div( all.onclick := {() => page2var.update( page2var() + 1 )} )("CLick me to increment Page Two value")
+    )
+
   }
 
 
