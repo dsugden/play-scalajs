@@ -7,35 +7,26 @@ import play.api.libs.json.{JsString, Json}
 import play.api.mvc._
 import play.twirl.api.Html
 import scalaz._, Scalaz._
-//import argonaut._, Argonaut._
-
 import scalaviews.ScalaView._
-
 import tools.Logging._
-
 import common.events._
 import upickle._
 import common.events.BrowserEvents._
 
-
-
 object Application extends Controller {
 
-
+  //TODO move mutable session into an Actor
   var browserSession:BrowserSession = BrowserSession.initial
 
-
+  /** main html page w/ js etc. */
   def index = Action {
     Ok(Html(main.toString))
   }
 
-  def getInitialScene= Action{
-    implicit request => {
-      val res = write(browserSession)
-      Ok(res)
-    }
-  }
 
+  /**
+   * demo upickle of sum type, common model
+   */
   def browserEvent = Action {
     implicit request => {
       request.body.asJson.fold(Ok("a")){json =>
@@ -43,10 +34,7 @@ object Application extends Controller {
           case Initial => Ok(write(browserSession).logDebug("writing browserSession " ++ _.toString))
           case _ =>Ok("b")
         }
-
       }
     }
-
   }
-
 }

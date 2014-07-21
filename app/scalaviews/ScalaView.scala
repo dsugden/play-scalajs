@@ -1,13 +1,12 @@
 package scalaviews
 
 import controllers.routes
-
-import scalatags.Text.all._
 import scalatags.Text._
 import scalatags.Text.all._
 
 object ScalaView {
 
+  /** weird this wasn't in scalatags */
   val titleTag = "title".tag
 
   lazy val main = html(
@@ -19,7 +18,7 @@ object ScalaView {
     ),
     body(
   //      for production (play dist), use the optimized version instead
-//     <script src="@routes.Assets.at("javascripts/browserapp-opt.js")" type="text/javascript"></script>
+  //     <script src="@routes.Assets.at("javascripts/browserapp-opt.js")" type="text/javascript"></script>
       script(src:=routes.Assets.at("javascripts/browserapp-fastopt.js").toString, tpe:="text/javascript"),
       script(src:=routes.Assets.at("javascripts/browserapp-launcher.js").toString, tpe:="text/javascript")
     )
