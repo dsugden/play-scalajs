@@ -55,8 +55,8 @@ object RxModel {
     case class Either1[F[_], G[_], A](v: Either[F[A], G[A]])
     val c : Free[Either1[Free[Console], Free[Geo], _], Int]
 
-  */
 
+*/
 
 
 
